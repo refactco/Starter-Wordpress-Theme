@@ -1,0 +1,25 @@
+// TOOLS
+@import 'tools/mq';
+
+// SETTINGS
+@import 'settings/mq';
+
+// GENERIC
+@import 'elements/defaults.scss';
+
+// BLOCKS
+// Core blocks styles
+@import 'blocks/button.scss';
+@import 'blocks/search.scss';
+@import 'blocks/separator.scss';
+@import 'blocks/group.scss';
+@import 'blocks/post-terms.scss';
+@import 'blocks/post-author.scss';
+@import 'blocks/post-content.scss';
+
+// COMPONENTS
+@import 'components/section.scss';
+
+// PARTIALS
+@import 'partials/header.scss';
+@import 'partials/footer.scss';

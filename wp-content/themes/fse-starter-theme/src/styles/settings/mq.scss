@@ -1,0 +1,26 @@
+// To enable support for browsers that do not support @media queries,
+// (IE <= 8, Firefox <= 3, Opera <= 9) set $mq-responsive to false
+// Create a separate stylesheet served exclusively to these browsers,
+// meaning @media queries will be rasterized, relying on the cascade itself
+$mq-responsive: true;
+
+// Name your breakpoints in a way that creates a ubiquitous language
+// across team members. It will improve communication between
+// stakeholders, designers, developers, and testers.
+$mq-breakpoints: (
+  mobile: 20em, // 320px
+  sm: 36em, // 576px
+  md: 48em, // 768px
+  lg: 62em, // 992px
+  tablet: 46.25em, // 740px
+  desktop: 61.25em, // 980px
+  wide: 89.5em, // 1432px
+  // Tweakpoints
+  desktopAd: 75em, // 1200px
+  mobileLandscape: 30em, // 480px
+);
+
+// If you want to display the currently active breakpoint in the top
+// right corner of your site during development, add the breakpoints
+// to this list, ordered by width, e.g. (mobile, tablet, desktop).
+// $mq-show-breakpoints: (mobile, mobileLandscape, tablet, desktop, wide);

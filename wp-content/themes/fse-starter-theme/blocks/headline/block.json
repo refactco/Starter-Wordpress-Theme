@@ -1,0 +1,24 @@
+{
+  "name": "acf/headline",
+  "title": "Headline",
+  "category": "starter-theme",
+  "icon": "heading",
+  "keywords": ["headline", "heading"],
+  "version": "1.0.0",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "headline.php"
+  },
+  "supports": {
+    "align": false,
+    "anchor": true,
+    "alignContent": false
+  },
+	"styles": [
+		{ "name": "default", "label": "Default", "isDefault": true },
+		{ "name": "center", "label": "Centered" },
+		{ "name": "small", "label": "Small" }
+	],
+  "style": [ "file:./index.css" ],
+  "editorStyle": [ "file:./editor.css" ]
+}

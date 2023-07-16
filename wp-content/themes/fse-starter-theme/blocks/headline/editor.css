@@ -1,0 +1,14 @@
+.c-headline .acf-innerblocks-container {
+  width: 100%;
+  display: flex;
+}
+
+.c-headline.is-style-center .acf-innerblocks-container {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.c-headline.is-style-center .c-headline__title {
+  max-width: fit-content;
+  margin: 0 auto;
+}
