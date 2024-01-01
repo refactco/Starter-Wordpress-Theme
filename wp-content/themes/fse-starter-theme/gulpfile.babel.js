@@ -310,6 +310,21 @@ gulp.task('zip', () => {
 	return gulp.src(src).pipe(zip(config.zipName)).pipe(gulp.dest(config.zipDestination));
 });
 
+
+/**
+ * Task: `updateVersion`.
+ *
+ * Update the version in the block.json file.
+ */
+const updateVersion = (done) => {
+  const { exec } = require('child_process');
+  exec('node update-version.js', (err, stdout, stderr) => {
+    console.log(stdout);
+    console.error(stderr);
+    done(err);
+  });
+};
+
 /**
  * Watch Tasks.
  *
@@ -325,3 +340,4 @@ gulp.task(
 		gulp.watch(config.imgSRC, gulp.series('images', reload)); // Reload on customJS file changes.
 	})
 );
+gulp.task('updateVersion', updateVersion);
