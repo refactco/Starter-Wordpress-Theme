@@ -17,6 +17,17 @@ npm install
 npm start
 ```
 
+## Theme Version Updater 
+To update versions for blocks and the theme when SCSS files are modified:
+```sh
+gulp updateVersion
+```
+This command checks the modification time of SCSS files in the blocks and src/styles directories. If modifications are detected, it updates the versions in `block.json`, `index.asset.php`, and `functions.php` files.
+
+### Additional Notes
+- The script uses a memory file (lastModifiedMemory.json) to store the last modification time. Ensure this file is writable.
+- Each block should have a block.json, index.scss, and index.asset.php file for the script to work correctly.
+
 
 ## Directories Definition
 
