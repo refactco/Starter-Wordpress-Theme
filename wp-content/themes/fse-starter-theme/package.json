@@ -1,8 +1,8 @@
 {
 	"name": "wp-gulp",
 	"description": "A WPGulp based project.",
-	"version": "0.0.1",
-	"repository": "https://gitlab.markitasdone.com/markitasdone/markitasdone/resources/wpgulp",
+	"version": "1.2.0",
+	"repository": "https://github.com/refactco/Starter-Wordpress-Theme",
 	"license": "MIT",
 	"devDependencies": {
 		"@babel/core": "^7.0.0",
@@ -34,6 +34,7 @@
 		"gulp-uglifycss": "^1.0.6",
 		"gulp-wp-pot": "^2.0.7",
 		"gulp-zip": "^5.0.2",
+		"json-merger": "^1.1.10",
 		"sass": "^1.52.1"
 	},
 	"scripts": {
@@ -49,5 +50,6 @@
 		"cache-clear": "gulp clearCache"
 	},
 	"dependencies": {
+		"glob": "^10.3.10"
 	}
 }
