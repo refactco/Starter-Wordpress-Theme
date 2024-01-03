@@ -131,18 +131,6 @@ function calculateNewVersion(previousVersion) {
   // Increment the last digit of the version
   versionParts[2] += 1;
 
-  // If the last digit reaches 10, reset it to 0 and increment the middle digit
-  if (versionParts[2] === 10) {
-    versionParts[2] = 0;
-    versionParts[1] += 1;
-
-    // If the middle digit reaches 10, reset it to 0 and increment the first digit
-    if (versionParts[1] === 10) {
-      versionParts[1] = 0;
-      versionParts[0] += 1;
-    }
-  }
-
   // Join the version parts back into a string
   const newVersion = versionParts.join('.');
 
