@@ -35,7 +35,7 @@ wp-content/*
 wp-content/themes/*
 !wp-content/themes/starter-theme/
 !wp-content/themes/fse-starter-theme/
-
+wp-content/themes/fse-starter-theme/languages/starter-theme.pot
 
 # packages
 node_modules
